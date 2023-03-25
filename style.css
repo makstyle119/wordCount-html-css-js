@@ -1,0 +1,88 @@
+/* Global styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+header h1,
+p {
+  margin: 0;
+}
+
+main {
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+main > p {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+#currentPage {
+  text-decoration: none;
+  color: inherit;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+textarea {
+  height: 200px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: vertical;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+#output {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 10px 0;
+}
+
+/* Media queries */
+@media screen and (max-width: 600px) {
+  main {
+    padding: 10px;
+  }
+}

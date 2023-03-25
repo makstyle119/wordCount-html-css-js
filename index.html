@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Word Count App</title>
+    <meta
+      name="description"
+      content="Use our word count app to easily count the number of words in your text. It's fast, free, and easy to use."
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body onload="getYearAndUrl()">
+    <header>
+      <a href="#" id="currentPage">
+        <h1>Word Count App</h1>
+      </a>
+    </header>
+    <main>
+      <p class="shortDescription">
+        Enter your text below to count the number of words:
+      </p>
+      <form>
+        <textarea
+          id="text-input"
+          placeholder="Enter your text here..."
+          required
+        ></textarea>
+        <button type="button" id="count-btn">Count Words</button>
+      </form>
+      <div id="output"></div>
+    </main>
+    <footer>
+      <p>
+        Word Count App &copy; <span id="getYear"></span>. DEVELOP & MAINTAIN BY
+        MAK DEVELOPMENT HOUSE.
+      </p>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
