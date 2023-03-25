@@ -51,6 +51,21 @@ textarea {
   resize: vertical;
 }
 
+.button-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.button-row button {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.button-row button:last-child {
+  margin-right: 0;
+}
+
 button {
   padding: 10px 20px;
   background-color: #333;
@@ -67,6 +82,7 @@ button:hover {
 #output {
   font-size: 1.2rem;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 footer {
@@ -84,5 +100,18 @@ footer {
 @media screen and (max-width: 600px) {
   main {
     padding: 10px;
+  }
+  .button-row {
+    flex-wrap: wrap;
+  }
+
+  .button-row button {
+    flex: 0 0 100%;
+    margin-bottom: 10px;
+    margin-right: 0;
+  }
+
+  .button-row button:last-child {
+    margin-bottom: 0;
   }
 }
